@@ -1,0 +1,27 @@
+a {
+    color: grey;
+}
+
+.ingredient-list {
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .recipeDetails {
+        img {
+            width: 250px;
+            height: auto;
+            margin-left: 50px;
+        }
+    }
+
+    .recipeTitle,
+    .recipeIngredients {
+        margin: 8px !important;
+    }
+
+    .recipeIngredientsList {
+        margin: 8px 8px 18px 8px;
+    }
+
+}

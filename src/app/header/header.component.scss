@@ -1,0 +1,21 @@
+a {
+    color: grey;
+}
+
+.dropdown-menu {
+    min-width: 5rem;
+}
+
+.active {
+    color: rgba(0,0,0,.9);
+}
+
+.inactive {
+    color: rgba(0,0,0,.5);
+}
+
+.rightNavSection {
+    @media only screen and (max-width: 600px) {
+       float: none !important;
+    }
+}

@@ -1,0 +1,16 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 500px) {
+    .addIngredientBtn {
+        margin-bottom: 20px;
+    }
+
+    .addBtn {
+        width: 20%;
+        position: absolute;
+        right: 0;
+    }
+}
