@@ -41,7 +41,16 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="description">Directions</label>
+                    <textarea name="directions" id="directions" cols="30" rows="6" class="form-control" formControlName="directions"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-12" formArrayName="ingredients">
+                <p>Ingredients</p>
                 <div
                     class="row mb-2"
                     *ngFor="let ingredientsCtrl of controls; let i = index" 
