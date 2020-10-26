@@ -3,29 +3,29 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="collapse navbar-collapse appDropdown" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" *ngIf="isAuthenticated">
-        <a class="nav-link" routerLink="/recipes" routerLinkActive="router-link-active">Recipes <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/recipes" routerLinkActive="router-link-active" data-toggle="collapse" data-target=".navbar-collapse.show">Recipes <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/shopping-list" routerLinkActive="router-link-active" >Shopping-List</a>
+        <a class="nav-link" routerLink="/shopping-list" routerLinkActive="router-link-active" data-toggle="collapse" data-target=".navbar-collapse.show">Shopping-List</a>
       </li>
       <li class="nav-item" *ngIf="!isAuthenticated">
         <a class="nav-link" routerLink="/auth" routerLinkActive="router-link-active">Authenticate</a>
       </li>
-    </ul>  
+    </ul>
     <ul class="navbar-nav float-right mr-5 rightNavSection">
       <li class="nav-item" *ngIf="isAuthenticated">
         <a class="nav-link" style="cursor: pointer;" (click)="onLogout()">Logout</a>
       </li>
-      <li class="nav-item dropdown" *ngIf="isAuthenticated">
+      <li class="nav-item dropdown input-group-appDropdown" *ngIf="isAuthenticated">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Manage
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" style="cursor: pointer;" (click)="onSaveData()">Save Data</a>
-          <a class="dropdown-item" style="cursor: pointer;" (click)="onFetchData()">Fetch Data</a>
+          <a class="dropdown-item" style="cursor: pointer;" (click)="onSaveData()" data-toggle="collapse" data-target=".navbar-collapse.show">Save Data</a>
+          <a class="dropdown-item" style="cursor: pointer;" (click)="onFetchData()" data-toggle="collapse" data-target=".navbar-collapse.show">Fetch Data</a>
         </div>
       </li>
     </ul>

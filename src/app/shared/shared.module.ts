@@ -17,7 +17,8 @@ import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.compo
     exports: [
         AlertComponent,
         LoadingSpinnerComponent,
-        CommonModule
+        CommonModule,
+        DropdownDirective
     ]
 })
 export class SharedModule {}
