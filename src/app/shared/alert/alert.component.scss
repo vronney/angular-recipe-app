@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 50;
 }
 
@@ -15,10 +15,21 @@
     width: 60vw;
     padding: 16px;
     z-index: 100;
-    background: white;
-    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.26);
+    background: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .alert-box-actions {
     text-align: right;
+
+    button {
+        background-color: var(--primary-color);
+        border: none;
+        padding: 8px 24px;
+        
+        &:hover {
+            background-color: var(--secondary-color);
+        }
+    }
 }

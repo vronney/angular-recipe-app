@@ -1,21 +1,26 @@
-a {
-    color: grey;
-}
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 
-.dropdown-menu {
-    min-width: 5rem;
-}
+  .navbar-brand, .nav-link {
+    color: var(--light-text) !important;
+  }
 
-.active {
-    color: rgba(0,0,0,.9);
-}
+  .navbar-toggler {
+    border-color: var(--light-text);
+  }
 
-.inactive {
-    color: rgba(0,0,0,.5);
-}
+  .dropdown-menu {
+    background-color: var(--background-color);
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
-.rightNavSection {
-    @media only screen and (max-width: 600px) {
-       float: none !important;
+    .dropdown-item {
+      color: var(--text-color);
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--light-text);
+      }
     }
+  }
 }

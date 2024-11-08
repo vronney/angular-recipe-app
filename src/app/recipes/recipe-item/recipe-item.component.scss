@@ -1,0 +1,16 @@
+.router-link-active {
+  background-color: var(--primary-color) !important;
+  color: var(--light-text) !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.list-group-item {
+  border: none;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+} 
